@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "flowbite-react": "^0.7.2",
+    "react-icon": "^1.0.0"
+  }
+}

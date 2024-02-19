@@ -6,18 +6,20 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route exact path="/about" element={<About/>} />
-        <Route exact path="/signin" element={<Signin/>} />
-        <Route exact path="/signup" element={<Signup/>} />
+        <Route  path="/" element={<Home/>} />
+        <Route  path="/about" element={<About/>} />
+        <Route  path="/signin" element={<Signin/>} />
+        <Route  path="/signup" element={<Signup/>} />
         <Route exact path="/dashboard" element={<Dashboard/>} />
-        <Route exact path="/projects" element={<Projects/>} />
+        <Route  path="/projects" element={<Projects/>} />
       </Routes>
     </BrowserRouter>
   );
